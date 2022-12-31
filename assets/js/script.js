@@ -14,6 +14,7 @@ $(document).ready(function () {
     })
    
     function timeTracker() {
+      setInterval(timeTracker, 60000); // calls timeTracker every 60 seconds (60000 milliseconds)
         //get current number of hours.
         var timeNow = moment().hour();
 
